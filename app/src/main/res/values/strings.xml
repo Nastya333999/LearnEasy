@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">LearnEasy</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="add_new">Add new</string>
+    <string name="show_all">Show all</string>
+    <string name="add_new_words">Add new words</string>
+    <string name="delete_word">Delete word</string>
+    <string name="add_word">Add word</string>
+    <string name="add_translation">Add translation</string>
+    <string name="add_module_name">Add module name</string>
+    <string name="save">Save</string>
+</resources>

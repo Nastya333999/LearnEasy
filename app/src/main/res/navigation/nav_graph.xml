@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/startFragment">
+
+    <fragment
+        android:id="@+id/startFragment"
+        android:name="com.anastasia.develop.learneasy.ModulesFragment"
+        android:label="fragment_start"
+        tools:layout="@layout/fragment_start" >
+        <action
+            android:id="@+id/action_startFragment_to_showAllFragment"
+            app:destination="@id/showAllFragment" />
+        <action
+            android:id="@+id/action_startFragment_to_addNewFragment"
+            app:destination="@id/addNewFragment" />
+        <action
+            android:id="@+id/action_startFragment_to_newModule"
+            app:destination="@id/newModule" />
+    </fragment>
+    <fragment
+        android:id="@+id/showAllFragment"
+        android:name="com.anastasia.develop.learneasy.ShowAllFragment"
+        android:label="fragment_show_all"
+        tools:layout="@layout/fragment_show_all" />
+    <fragment
+        android:id="@+id/addNewFragment"
+        android:name="com.anastasia.develop.learneasy.AddNewFragment"
+        android:label="fragment_add_new"
+        tools:layout="@layout/fragment_add_new" />
+    <fragment
+        android:id="@+id/newModule"
+        android:name="com.anastasia.develop.learneasy.CreateNewModuleFragment"
+        android:label="fragment_new_module"
+        tools:layout="@layout/fragment_create_new_module" />
+</navigation>
