@@ -1,10 +1,11 @@
-package com.anastasia.develop.learneasy
+package com.anastasia.develop.learneasy.ui
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.NavController
 import androidx.navigation.Navigation
 import androidx.navigation.ui.setupWithNavController
+import com.anastasia.develop.learneasy.R
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.google.android.material.bottomsheet.BottomSheetBehavior
 import com.anastasia.develop.learneasy.databinding.ActivityMainBinding

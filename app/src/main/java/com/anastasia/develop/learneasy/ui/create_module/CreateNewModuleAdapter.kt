@@ -1,4 +1,4 @@
-package com.anastasia.develop.learneasy
+package com.anastasia.develop.learneasy.ui.create_module
 
 import android.text.Editable
 import android.text.TextWatcher
@@ -7,8 +7,9 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.EditText
 import androidx.recyclerview.widget.RecyclerView
+import com.anastasia.develop.learneasy.R
 import com.google.android.material.floatingactionbutton.FloatingActionButton
-import com.anastasia.develop.learneasy.CreateNewModuleAdapter.*
+import com.anastasia.develop.learneasy.data.Word
 
 class CreateNewModuleAdapter() : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
 

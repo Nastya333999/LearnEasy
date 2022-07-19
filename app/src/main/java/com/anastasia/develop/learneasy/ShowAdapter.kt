@@ -8,6 +8,7 @@ import android.widget.ImageButton
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.anastasia.develop.learneasy.ShowAdapter.*
+import com.anastasia.develop.learneasy.data.Word
 
 class ShowAdapter : RecyclerView.Adapter<ShowViewHolder>() {
 
@@ -41,9 +42,7 @@ class ShowAdapter : RecyclerView.Adapter<ShowViewHolder>() {
         private var focusedWord: Word? = null
 
         init {
-            Log.d("adapter", "create viewholder")
             imgBtnDeleteWord.setOnClickListener {
-                Log.d("adapter", "delete click = $focusedWord")
                 focusedWord?.let { onDeleteClickListener?.invoke(it) }
             }
         }

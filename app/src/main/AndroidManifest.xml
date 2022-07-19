@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.LearnEasy">
         <activity
-            android:name="com.anastasia.develop.learneasy.MainActivity"
+            android:name="com.anastasia.develop.learneasy.ui.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

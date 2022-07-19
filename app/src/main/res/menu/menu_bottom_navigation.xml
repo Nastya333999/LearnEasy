@@ -8,7 +8,7 @@
         app:showAsAction="always" />
 
     <item
-        android:id="@+id/startFragment"
+        android:id="@+id/modulesFragment"
         android:icon="@drawable/ic_plus"
         android:title="Home"
         app:showAsAction="always" />

@@ -10,4 +10,7 @@
     <string name="add_translation">Add translation</string>
     <string name="add_module_name">Add module name</string>
     <string name="save">Save</string>
+    <string name="cards">Cards</string>
+    <string name="learning">Learning</string>
+    <string name="selection">Selection</string>
 </resources>

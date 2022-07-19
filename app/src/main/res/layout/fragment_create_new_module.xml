@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="21dp"
-    tools:context=".CreateNewModuleFragment">
+    tools:context=".ui.create_module.CreateNewModuleFragment">
 
     <Button
         android:id="@+id/btn_save"
@@ -32,6 +32,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="@+id/et_module_name"
         app:layout_constraintTop_toBottomOf="@id/et_module_name"
+        app:layout_constraintVertical_bias="0.0"
         tools:itemCount="1"
         tools:listitem="@layout/item_rv_add_word" />
 

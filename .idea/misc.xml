@@ -7,10 +7,13 @@
         <entry key="..\:/LearnEasy/app/src/main/res/drawable/ic_close.xml" value="0.213" />
         <entry key="..\:/LearnEasy/app/src/main/res/drawable/ic_launcher_background.xml" value="0.213" />
         <entry key="..\:/LearnEasy/app/src/main/res/layout-v23/activity_main.xml" value="0.25769927536231885" />
+        <entry key="..\:/LearnEasy/app/src/main/res/layout-v26/fragment_module.xml" value="0.21105072463768115" />
         <entry key="..\:/LearnEasy/app/src/main/res/layout/activity_main.xml" value="0.264" />
         <entry key="..\:/LearnEasy/app/src/main/res/layout/bottom_sheet.xml" value="0.1" />
         <entry key="..\:/LearnEasy/app/src/main/res/layout/fragment_add_new.xml" value="0.23333333333333334" />
         <entry key="..\:/LearnEasy/app/src/main/res/layout/fragment_create_new_module.xml" value="0.24954710144927536" />
+        <entry key="..\:/LearnEasy/app/src/main/res/layout/fragment_module.xml" value="0.24954710144927536" />
+        <entry key="..\:/LearnEasy/app/src/main/res/layout/fragment_moduleee.xml" value="0.259375" />
         <entry key="..\:/LearnEasy/app/src/main/res/layout/fragment_new_module.xml" value="0.25769927536231885" />
         <entry key="..\:/LearnEasy/app/src/main/res/layout/fragment_result_added_new_module.xml" value="0.24954710144927536" />
         <entry key="..\:/LearnEasy/app/src/main/res/layout/fragment_show_all.xml" value="0.23333333333333334" />
@@ -19,6 +22,7 @@
         <entry key="..\:/LearnEasy/app/src/main/res/layout/item_rv_add_word_footter.xml" value="0.24954710144927536" />
         <entry key="..\:/LearnEasy/app/src/main/res/layout/item_rv_modules.xml" value="0.24954710144927536" />
         <entry key="..\:/LearnEasy/app/src/main/res/layout/item_rv_show.xml" value="0.25769927536231885" />
+        <entry key="..\:/LearnEasy/app/src/main/res/layout/item_rv_words.xml" value="0.259375" />
         <entry key="..\:/LearnEasy/app/src/main/res/menu/bottom_nav_menu.xml" value="0.259375" />
         <entry key="..\:/LearnEasy/app/src/main/res/menu/menu.xml" value="0.259375" />
         <entry key="..\:/LearnEasy/app/src/main/res/menu/menu_bottom_navigation.xml" value="0.259375" />

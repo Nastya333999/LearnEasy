@@ -1,4 +1,4 @@
-package com.anastasia.develop.learneasy
+package com.anastasia.develop.learneasy.ui.modules
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -7,6 +7,8 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.anastasia.develop.learneasy.R
+import com.anastasia.develop.learneasy.data.Repository
 import com.anastasia.develop.learneasy.databinding.FragmentStartBinding
 
 class ModulesFragment : Fragment() {
@@ -36,8 +38,8 @@ class ModulesFragment : Fragment() {
 
         startAdapter.setData(Repository.repository.getModules())
         startAdapter.onShowClickListener = {
-            // переход на можуль
-
+            val action = ModulesFragmentDirections.actionStartFragmentToModuleFragment(module = it)
+            view.findNavController().navigate(action)
         }
 
         binding.btnShowAll.setOnClickListener {

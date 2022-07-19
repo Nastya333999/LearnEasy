@@ -1,4 +1,4 @@
-package com.anastasia.develop.learneasy
+package com.anastasia.develop.learneasy.data
 
 import android.util.Log
 

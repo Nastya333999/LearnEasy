@@ -3,11 +3,11 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/startFragment">
+    app:startDestination="@id/modulesFragment">
 
     <fragment
-        android:id="@+id/startFragment"
-        android:name="com.anastasia.develop.learneasy.ModulesFragment"
+        android:id="@+id/modulesFragment"
+        android:name="com.anastasia.develop.learneasy.ui.modules.ModulesFragment"
         android:label="fragment_start"
         tools:layout="@layout/fragment_start" >
         <action
@@ -19,6 +19,9 @@
         <action
             android:id="@+id/action_startFragment_to_newModule"
             app:destination="@id/newModule" />
+        <action
+            android:id="@+id/action_startFragment_to_moduleFragment"
+            app:destination="@id/moduleFragment" />
     </fragment>
     <fragment
         android:id="@+id/showAllFragment"
@@ -32,7 +35,16 @@
         tools:layout="@layout/fragment_add_new" />
     <fragment
         android:id="@+id/newModule"
-        android:name="com.anastasia.develop.learneasy.CreateNewModuleFragment"
+        android:name="com.anastasia.develop.learneasy.ui.create_module.CreateNewModuleFragment"
         android:label="fragment_new_module"
         tools:layout="@layout/fragment_create_new_module" />
+    <fragment
+        android:id="@+id/moduleFragment"
+        android:name="com.anastasia.develop.learneasy.ui.module.ModuleFragment"
+        android:label="fragment_module"
+        tools:layout="@layout/fragment_module" >
+        <argument
+            android:name="module"
+            app:argType="com.anastasia.develop.learneasy.Module" />
+    </fragment>
 </navigation>

@@ -1,10 +1,12 @@
-package com.anastasia.develop.learneasy
+package com.anastasia.develop.learneasy.ui.modules
 
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.anastasia.develop.learneasy.R
+import com.anastasia.develop.learneasy.data.Module
 
 class ModulesAdapter : RecyclerView.Adapter<ModulesAdapter.StartFragmentHolder>() {
 
