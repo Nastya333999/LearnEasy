@@ -1,6 +1,8 @@
-package com.anastasia.develop.learneasy.data
+package com.anastasia.develop.learneasy.repository
 
 import android.util.Log
+import com.anastasia.develop.learneasy.data.Module
+import com.anastasia.develop.learneasy.data.Word
 
 class Repository {
     private val words = mutableListOf<Word>()

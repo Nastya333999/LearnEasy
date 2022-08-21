@@ -8,11 +8,7 @@ import android.view.ViewGroup
 import androidx.fragment.app.viewModels
 import androidx.navigation.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.anastasia.develop.learneasy.R
-import com.anastasia.develop.learneasy.data.Repository
 import com.anastasia.develop.learneasy.databinding.FragmentStartBinding
-import com.anastasia.develop.learneasy.ui.module.ModuleAdapter
-import com.anastasia.develop.learneasy.ui.module.ModuleViewModel
 
 class ModulesFragment : Fragment() {
 
@@ -42,13 +38,10 @@ class ModulesFragment : Fragment() {
 
     private fun initListeners() {
         startAdapter.onShowClickListener = {
-            val action = ModulesFragmentDirections.actionStartFragmentToModuleFragment(module = it)
+            val action = ModulesFragmentDirections.actionStartFragmentToModuleFragment(moduleId = it.module.id)
             view?.findNavController()?.navigate(action)
         }
 
-        binding.btnShowAll.setOnClickListener {
-            view?.findNavController()?.navigate(R.id.action_startFragment_to_showAllFragment)
-        }
     }
 
     private fun initObserver() {

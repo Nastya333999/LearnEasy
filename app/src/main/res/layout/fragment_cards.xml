@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.cards.CardsFragment">
+
+    <ImageButton
+        android:id="@+id/btn_close_fragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_close"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txt_words_done"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2"
+        android:textColor="@color/black"
+        android:textSize="21sp"
+        app:layout_constraintBottom_toBottomOf="@id/btn_close_fragment"
+        app:layout_constraintEnd_toStartOf="@+id/txt_words_separator"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toEndOf="@id/btn_close_fragment"
+        app:layout_constraintTop_toTopOf="@id/btn_close_fragment" />
+
+    <TextView
+        android:id="@+id/txt_words_separator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="/"
+        android:textColor="@color/black"
+        android:textSize="21sp"
+        app:layout_constraintEnd_toStartOf="@id/txt_words_in_module"
+        app:layout_constraintStart_toEndOf="@id/txt_words_done"
+        app:layout_constraintTop_toTopOf="@id/txt_words_done" />
+
+    <TextView
+        android:id="@+id/txt_words_in_module"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="33"
+        android:textColor="@color/black"
+        android:textSize="21sp"
+        app:layout_constraintEnd_toStartOf="@id/btn_settings"
+        app:layout_constraintStart_toEndOf="@id/txt_words_separator"
+        app:layout_constraintTop_toTopOf="@id/txt_words_done" />
+
+    <ImageButton
+        android:id="@+id/btn_settings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_settings"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="16dp"
+        app:layout_constraintEnd_toEndOf="@id/btn_settings"
+        app:layout_constraintStart_toStartOf="@id/btn_close_fragment"
+        app:layout_constraintTop_toBottomOf="@id/btn_close_fragment" />
+
+
+    <com.yuyakaido.android.cardstackview.CardStackView
+        android:id="@+id/rv_cards"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/progress_bar"
+        app:layout_constraintTop_toBottomOf="@+id/progress_bar"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

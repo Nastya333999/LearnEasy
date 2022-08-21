@@ -7,11 +7,12 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.anastasia.develop.learneasy.R
 import com.anastasia.develop.learneasy.data.Module
+import com.anastasia.develop.learneasy.data.ModuleWithWords
 
 class ModulesAdapter : RecyclerView.Adapter<ModulesAdapter.StartFragmentHolder>() {
 
-    var onShowClickListener: ((Module) -> Unit)? = null
-    private val module = mutableListOf<Module>()
+    var onShowClickListener: ((ModuleWithWords) -> Unit)? = null
+    private val module = mutableListOf<ModuleWithWords>()
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): StartFragmentHolder {
         val v = LayoutInflater.from(parent.context).inflate(R.layout.item_rv_modules, parent, false)
@@ -19,13 +20,13 @@ class ModulesAdapter : RecyclerView.Adapter<ModulesAdapter.StartFragmentHolder>(
     }
 
     override fun onBindViewHolder(holder: StartFragmentHolder, position: Int) {
-        val m: Module = module[position]
+        val m: ModuleWithWords = module[position]
         holder.bind(m)
     }
 
     override fun getItemCount(): Int = module.size
 
-    fun setData(list: List<Module>) {
+    fun setData(list: List<ModuleWithWords>) {
         module.clear()
         module.addAll(list)
     }
@@ -35,12 +36,12 @@ class ModulesAdapter : RecyclerView.Adapter<ModulesAdapter.StartFragmentHolder>(
 
         private val txtNewModule = itemView.findViewById<TextView>(R.id.txt_new_module)
         private val txtModulesCount = itemView.findViewById<TextView>(R.id.txt_modules_count)
-        private var module: Module? = null
+        private var module: ModuleWithWords? = null
 
-        fun bind(module: Module) {
-            this.module = module
-            txtNewModule.text = module.name
-            txtModulesCount.text = module.words.count().toString()
+        fun bind(moduleWithWords: ModuleWithWords) {
+            this.module = moduleWithWords
+            txtNewModule.text = moduleWithWords.module.name
+            txtModulesCount.text = moduleWithWords.words.count().toString()
         }
 
         init {
