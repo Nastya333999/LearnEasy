@@ -16,4 +16,7 @@ interface WordsDao {
 
     @Query("SELECT * FROM words_table")
     fun getAll(): List<Word>
+
+    @Update
+    fun update(word: Word)
 }

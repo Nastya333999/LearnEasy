@@ -13,5 +13,5 @@ interface ModulesRepository {
     suspend fun insertModule(module: Module): Long
     suspend fun insertWords(words: List<Word>)
     suspend fun deleteModule(module: Module, onSuccess: () -> Unit)
-
+    suspend fun updateWord(word: Word)
 }

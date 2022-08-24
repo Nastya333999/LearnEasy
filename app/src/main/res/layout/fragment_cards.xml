@@ -62,17 +62,41 @@
         style="?android:attr/progressBarStyleHorizontal"
         android:layout_width="match_parent"
         android:layout_height="16dp"
+        android:progress="0"
         app:layout_constraintEnd_toEndOf="@id/btn_settings"
         app:layout_constraintStart_toStartOf="@id/btn_close_fragment"
         app:layout_constraintTop_toBottomOf="@id/btn_close_fragment" />
 
+    <TextView
+        android:id="@+id/txt_unknown_words"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#FF0000"
+        android:padding="8dp"
+        android:text="0"
+        android:textColor="@color/black"
+        android:textSize="21dp"
+        app:layout_constraintStart_toStartOf="@+id/progress_bar"
+        app:layout_constraintTop_toBottomOf="@+id/progress_bar" />
+
+    <TextView
+        android:id="@+id/txt_known_words"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#008000"
+        android:padding="8dp"
+        android:text="0"
+        android:textColor="@color/black"
+        android:textSize="21dp"
+        app:layout_constraintEnd_toEndOf="@+id/btn_settings"
+        app:layout_constraintTop_toBottomOf="@+id/progress_bar" />
 
     <com.yuyakaido.android.cardstackview.CardStackView
         android:id="@+id/rv_cards"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/progress_bar"
-        app:layout_constraintTop_toBottomOf="@+id/progress_bar"/>
+        app:layout_constraintStart_toStartOf="@+id/txt_unknown_words"
+        app:layout_constraintTop_toBottomOf="@+id/txt_unknown_words" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

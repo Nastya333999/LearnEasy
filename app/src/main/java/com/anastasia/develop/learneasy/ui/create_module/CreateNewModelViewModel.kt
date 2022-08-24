@@ -20,11 +20,25 @@ class CreateNewModelViewModel(application: Application) : AndroidViewModel(appli
     private val dataBase = AppDataBase.getInstance(application)
     private val repository: ModulesRepository = ModuleRealisation(dataBase)
 
-    var words = MutableLiveData(mutableListOf(Word(value = "", valueTranslation = "")))
+    var words = MutableLiveData(
+        mutableListOf(
+            Word(
+                value = "",
+                valueTranslation = "",
+                status = Word.STATUS_INIT
+            )
+        )
+    )
 
     fun addNewWord() {
         val list = words.value
-        list?.add(Word(value = "", valueTranslation = ""))
+        list?.add(
+            Word(
+                value = "",
+                valueTranslation = "",
+                status = Word.STATUS_INIT
+            )
+        )
         words.postValue(list)
     }
 
@@ -32,7 +46,7 @@ class CreateNewModelViewModel(application: Application) : AndroidViewModel(appli
         viewModelScope.launch(Dispatchers.IO) {
             val newModuleId = repository.insertModule(Module(name = moduleName))
 
-           val wordsToSave = words.value ?: listOf()
+            val wordsToSave = words.value ?: listOf()
 
             wordsToSave.forEach { it.moduleId = newModuleId }
 

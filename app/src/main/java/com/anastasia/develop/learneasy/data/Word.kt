@@ -19,5 +19,15 @@ data class Word(
     var valueTranslation: String,
 
     @ColumnInfo
-    var moduleId: Long = 0
-) : Parcelable
+    var moduleId: Long = 0,
+
+    @ColumnInfo
+    val status: Int
+) : Parcelable{
+    companion object{
+        const val STATUS_INIT = 0
+        const val STATUS_LEFT = 1
+        const val STATUS_RIGHT = 2
+        const val STATUS_DONE = 3
+    }
+}

@@ -26,6 +26,10 @@ class ModuleRealisation(private val appDataBase: AppDataBase) : ModulesRepositor
         words.forEach { appDataBase.getWordDao().insert(it) }
     }
 
+    override suspend fun updateWord(word: Word) {
+        appDataBase.getWordDao().update(word)
+    }
+
     override suspend fun deleteModule(module: Module, onSuccess: () -> Unit) {
         appDataBase.getModuleDao().delete(module)
         onSuccess()
